@@ -1,0 +1,11 @@
+replicaCount: 2
+image:
+  repository: nginx
+  tag: "1.27"
+  pullPolicy: IfNotPresent
+service:
+  type: ClusterIP
+  port: 80
+app:
+  title: "updated helm nginx app"
+  message: "nginx app updated using Helm upgrade"

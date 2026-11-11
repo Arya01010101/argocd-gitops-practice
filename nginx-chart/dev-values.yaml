@@ -1,0 +1,5 @@
+replicaCount: 1
+
+app:
+  title: "Development Nginx App"
+  message: "Running in development environment"

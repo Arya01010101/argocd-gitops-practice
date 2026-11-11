@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-config
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>{{ .Values.app.title }}</title>
+    </head>
+    <body>
+      <h1>{{ .Values.app.title }}</h1>
+      <p>{{ .Values.app.message }}</p>
+    </body>
+    </html>
