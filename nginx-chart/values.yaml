@@ -7,5 +7,5 @@ service:
   type: ClusterIP
   port: 80
 app:
-  title: "updated helm nginx app"
-  message: "nginx app updated using Helm upgrade"
+  title: " helm nginx app"
+  message: "nginx app deploy using helmchart"
